@@ -71,6 +71,9 @@ now we have the data in binary so we can just de encode it and get the message t
 ### - padding 
 while interleaving we need to add padding into the data because there is a depth of interleaving , the code divides the entire payload into groups equal to the depth of inteleaving say if it was 23 bit long data sequence then if the depth of interleaving is 4 then we will have 5 groups of 5 bits but in the end we will have a 6th group with just single bit , padding will complete the last group by adding extra zeros 
 
+## - guide to files uploaded 
+
+we initially implemented the entire logic in c++ but later we decided it would be more convinient to do the entire project in Xcode hence we have uploaded files of both the models , we also thought of implementing the same logic by making a custom dictionary where instead of matching each and every 5 bit number to a specific character we thought of mapping it to the words of dictionary to enable faster communication but because of lack of time we were unable to deliver it . 
 
 
 
